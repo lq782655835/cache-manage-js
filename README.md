@@ -1,4 +1,4 @@
-# Cache-Manage-JS
+# Cache-Manage
 a fast and sample js cache manage
 
 ## Install
@@ -10,7 +10,6 @@ yarn add cache-manage-js
 
 ``` js
 import CacheManage, { MemoryStorage } from 'cache-manage-js'
-import Ca
 
 // default use localStorage
 const YOUR_KEY_NAME = 'YOUR_KEY_NAME'

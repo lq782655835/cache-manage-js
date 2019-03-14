@@ -4,7 +4,11 @@
   "description": "js cache manage",
   "main": "./src/index.js",
   "scripts": {
+    "test": "jest"
   },
   "author": "springleo",
-  "license": "MIC"
+  "license": "MIC",
+  "devDependencies": {
+    "jest": "^24.5.0"
+  }
 }
