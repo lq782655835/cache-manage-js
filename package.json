@@ -1,0 +1,10 @@
+{
+  "name": "cache-manage-js",
+  "version": "0.0.1",
+  "description": "js cache manage",
+  "main": "./src/index.js",
+  "scripts": {
+  },
+  "author": "springleo",
+  "license": "MIC"
+}
