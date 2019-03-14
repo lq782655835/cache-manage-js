@@ -1,9 +1,8 @@
-// import  MemoryStorage  from '../src'
+import CacheManage from '../src'
+import MemoryStorage from '../src/adapter/memory'
 
-// test('adds 1 + 2 to equal 3', () => {
-//     expect(sum(1, 2)).toBe(3);
-// });
-// let cacheItem = new MemoryStorage()
-// cacheItem.setItem('KEY_NAME', 123)
-// let getItem = cacheItem.getItem('KEY_NAME')
-// console.log(getItem)
+test('cache manage', () => {
+    let manage = new CacheManage('YOUR_KEY_NAME', new MemoryStorage())
+    manage.set('123')
+    expect(manage.get()).toBe('123');
+});
