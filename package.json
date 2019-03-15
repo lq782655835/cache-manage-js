@@ -1,8 +1,14 @@
 {
   "name": "cache-manage-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "js cache manage",
   "main": "./src/index.js",
+  "keywords": ["cache", "manage", "js"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lq782655835/cache-manage-js.git"
+  },
+  "homepage": "https://github.com/lq782655835/cache-manage-js#readme",
   "scripts": {
     "test": "jest"
   },
