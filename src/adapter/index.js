@@ -1,5 +1,5 @@
 import MemoryStorage from './memory'
 
-export default {
+export {
     MemoryStorage
 }

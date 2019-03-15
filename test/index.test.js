@@ -1,5 +1,4 @@
-import CacheManage from '../src'
-import MemoryStorage from '../src/adapter/memory'
+import CacheManage, { MemoryStorage }  from '../src'
 
 test('cache manage', () => {
     let manage = new CacheManage('YOUR_KEY_NAME', new MemoryStorage())

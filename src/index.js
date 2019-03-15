@@ -1,3 +1,5 @@
+export * from './adapter'
+
 export default class CacheManage {
     constructor(key, CacheClass) {
         this.key = key
