@@ -1,5 +1,7 @@
 import MemoryStorage from './memory'
+import CookieStorage from './cookie'
 
 export {
-    MemoryStorage
+    MemoryStorage,
+    CookieStorage
 }

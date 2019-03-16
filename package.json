@@ -1,9 +1,13 @@
 {
   "name": "cache-manage-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "js cache manage",
   "main": "./src/index.js",
-  "keywords": ["cache", "manage", "js"],
+  "keywords": [
+    "cache",
+    "manage",
+    "js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lq782655835/cache-manage-js.git"
@@ -19,5 +23,8 @@
     "@babel/preset-env": "^7.3.4",
     "babel-jest": "^24.5.0",
     "jest": "^24.5.0"
+  },
+  "dependencies": {
+    "js-cookie": "^2.2.0"
   }
 }
