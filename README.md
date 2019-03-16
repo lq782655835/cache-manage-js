@@ -1,5 +1,5 @@
 # Cache-Manage
-a fast and sample js cache manage
+a uniform and sample js cache manage
 
 ## Install
 ``` bash
@@ -7,7 +7,7 @@ yarn add cache-manage-js
 ```
 
 ## Usage
-union manage your cache class, support four cache class，and you can user-defined cache class by yourself。
+uniform manage your cache class, support four cache class，and you can user-defined cache class by yourself。
 * localStorage ([web api](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage))
 * sessionStorage ([web api](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage))
 * MemoryStorage
