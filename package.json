@@ -2,7 +2,8 @@
   "name": "cache-manage-js",
   "version": "0.0.3",
   "description": "js cache manage",
-  "main": "./src/index.js",
+  "main": "./dist/cacheManage.js",
+  "module": "./src/index.js",
   "keywords": [
     "cache",
     "manage",
@@ -15,6 +16,7 @@
   "homepage": "https://github.com/lq782655835/cache-manage-js#readme",
   "scripts": {
     "github": "sh deploy.sh",
+    "build": "webpack",
     "test": "jest"
   },
   "author": "springleo",
@@ -23,7 +25,10 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "babel-jest": "^24.5.0",
-    "jest": "^24.5.0"
+    "babel-loader": "^8.0.5",
+    "jest": "^24.5.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   },
   "dependencies": {
     "js-cookie": "^2.2.0"
