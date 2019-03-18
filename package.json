@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/lq782655835/cache-manage-js#readme",
   "scripts": {
+    "github": "sh deploy.sh",
     "test": "jest"
   },
   "author": "springleo",
