@@ -3,7 +3,6 @@
   "version": "0.0.4",
   "description": "js cache manage",
   "main": "./dist/cacheManage.js",
-  "module": "./src/index.js",
   "keywords": [
     "cache",
     "manage",
