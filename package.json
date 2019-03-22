@@ -1,6 +1,6 @@
 {
   "name": "cache-manage-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "js cache manage",
   "main": "./dist/cacheManage.js",
   "keywords": [
