@@ -17,27 +17,35 @@ yarn add cache-manage-js
 ```
 
 ## Usage
-uniform manage your cache class, support four cache class，and you can user-defined cache class by yourself。
-* localStorage ([web api](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage))
+
+default use `localStorage` strategy to save cache.
+
+``` js
+import CacheManage from 'cache-manage-js'
+
+let cacheItem = new CacheManage(CACHE_ITEM_KEY_NAME)
+cacheItem.set({ name: 100 })
+cacheItem.get() // { name: 100 }
+cacheItem.remove()
+cacheItem.clear()
+```
+
+### More Strategy
+
+uniform manage your cache, support four cache strategy：
+* localStorage ([web api](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)) - default
 * sessionStorage ([web api](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage))
 * MemoryStorage
 * CookieStorage (extend [js-cookie](https://github.com/js-cookie/js-cookie))
 ``` js
 import CacheManage, { MemoryStorage, CookieStorage } from 'cache-manage-js'
 
-// default use localStorage
-const YOUR_KEY_NAME = 'YOUR_KEY_NAME'
-let cacheItem = new CacheManage(YOUR_KEY_NAME)
-cacheItem.set({name: 100})
-cacheItem.get() // {name: 100}
-cacheItem.remove()
-cacheItem.clear()
-
-// other cache class
-let cacheItem = new CacheManage(YOUR_KEY_NAME, window.sessionStorage)
-let cacheItem = new CacheManage(YOUR_KEY_NAME, new MemoryStorage())
-let cacheItem = new CacheManage(YOUR_KEY_NAME, new CookieStorage())
+// union manage cache for different cache strategy in a single file
+let cacheItem = new CacheManage(CACHE_ITEM_KEY_NAME, localStorage)
+let cacheItem = new CacheManage(CACHE_ITEM_KEY_NAME, sessionStorage)
+let cacheItem = new CacheManage(CACHE_ITEM_KEY_NAME, new MemoryStorage())
+let cacheItem = new CacheManage(CACHE_ITEM_KEY_NAME, new CookieStorage({ expires: 7 }))
 ```
 
 ## License
-The code is distributed under the [MIT](http://opensource.org/licenses/MIT) license
+[MIT](http://opensource.org/licenses/MIT)
