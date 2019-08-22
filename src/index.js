@@ -8,12 +8,13 @@ export default class CacheManage {
 
     get() {
         let value = this.CacheClass.getItem(this.key) || ''
-        if (/^\{.*\}$/.test(value)) value = JSON.parse(value)
+        if (/^(\{|\[).*(\}|\])$/.test(value)) value = JSON.parse(value)
         return value
     }
 
     set(value) {
-        if (typeof value === typeof {}) value = JSON.stringify(value)
+        if (value === null || value === undefined) return
+        if (typeof value === "object") value = JSON.stringify(value)
         this.CacheClass.setItem && this.CacheClass.setItem(this.key, value)
     }
 
